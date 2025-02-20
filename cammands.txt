@@ -1,0 +1,52 @@
+Cammand For Creating Application:-
+composer create-project laravel/laravel photoShow
+php artisan make:model Album -m
+php artisan make:model Users -m
+php artisan make:model Customers -m
+php artisan make:model Photo -m
+php artisan make:middleware AuthAdmin
+
+
+
+
+Virtual host making process:-
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs"
+    ServerName localhost
+</VirtualHost>
+
+
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/photoShow/public"
+    ServerName photoShow.dev
+</VirtualHost>
+
+
+C:\Windows\System32\drivers\etc
+127.0.0.1 localhost
+127.0.0.1 photoShow.dev
+
+
+composer require laracel/ui
+php artisan ui bootstrap
+php artisan ui bootstrap --auth
+npm install
+npm run build
+npm run dev
+
+{{asset('admin/')}}
+{{asset('website/')}}
+
+
+
+href="{{ route('details') }}"
+
+
+@extends('website.app')
+@section('content')
+@endsection
+
+
+composer update
+php artisan serve --port 8001
